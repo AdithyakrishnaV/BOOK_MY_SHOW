@@ -9,10 +9,18 @@ import { BiImages } from "react-icons/bi";
 
 const HeroCarousal = () => {
 
+    const settingsLG ={ 
+      arrow: true, 
+      autoplay: true, 
+      centerMode: true, 
+      centerPadding: "200px", 
+      slidesToShow: 1,
+      infinite: true,
+      slidesToScroll: 1
+    };
+
     const settings = {
         arrow: true,
-        centerMode: true,
-        centerPadding: "160px",
         dots: true,
         infinite: true,
         speed: 500,
@@ -26,15 +34,29 @@ const HeroCarousal = () => {
                   "https://images.unsplash.com/photo-1583853168794-485e809166d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80",
                   "https://images.unsplash.com/photo-1514168757508-07ffe9ae125b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                 ];
-    return <>
+    return (
+    <>
+      <div className="lg:hidden">
       <HeroSlider {...settings}>
           {images.map((image) =>( 
-            <div className="w-20 h-80">
-                <img src={image} alt="testing" className="w-full h-full"/>
+            <div className="w-full h-56  md:h-96 py-3">
+                <img src={image} alt="testing" className="w-full h-full "/>
             </div>
           ))}
       </HeroSlider>
+      </div>
+      <div className="hidden lg:block">
+        <HeroSlider {...settingsLG}>
+          {images.map((image) =>( 
+            <div className="w-full h-80 px-2 py-3">
+                <img src={image} alt="testing" className="w-full h-full"
+                />
+            </div>
+          ))}
+        </HeroSlider>
+      </div>
     </>
+  );
 };
 
 export default HeroCarousal;
