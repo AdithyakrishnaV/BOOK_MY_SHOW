@@ -5,7 +5,7 @@ import React from "react";
 import Navbar from "../components/Navbar/navbar.components";
 import HeroCarousal from "../components/HeroCarousal/HeroCarousal.components";
 
-const DefaultLayout = (props) => {
+const DefaultLayout = (props) => {  
     return ( 
     <>
       <Navbar />
@@ -16,3 +16,5 @@ const DefaultLayout = (props) => {
 };
 
 export default DefaultLayout;
+
+ 
