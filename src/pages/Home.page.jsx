@@ -13,8 +13,8 @@ const HomePage  = () => {
     return (
       <>
         <div className="flex flex-col gap-4">
-          <div className="container mx-auto px-16">
-            <h1 className="text-2xl font-bold text-gray-800 my-3">
+          <div className="container mx-auto px-1 lg:px-20">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 my-3">
               The best of Entertainment
             </h1>  
             <EntertainmentCardSlider />
