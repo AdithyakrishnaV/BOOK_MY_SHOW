@@ -10,10 +10,10 @@ import PosterCarousalSettings from '../../config/PosterCarousal.config';
 const PosterSlider = (props) => {
     return (
         <>
-            <div className="flex flex-col item-start my-2">
+            <div className="flex flex-col item-start my-3">
               <h3 className={`text-2xl font-bold 
                    ${props.isDark ? "text-white" : "text-gray-800"}`}>
-                     {props.tile}
+                     {props.title}
               </h3>
               <p className={`text-sm
                    ${props.isDark ? "text-white" : "text-gray-800"}`}>

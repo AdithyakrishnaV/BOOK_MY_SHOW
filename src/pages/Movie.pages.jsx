@@ -1,7 +1,9 @@
 const Movie = () => {
     return (
         <>
-          hi  
+          <div>
+              <img src="" alt="" />
+          </div>  
         </>
     )
 }

@@ -1,3 +1,4 @@
+import React from "react";
 
 
 //Coponents
@@ -19,7 +20,7 @@ const HomePage  = () => {
             <EntertainmentCardSlider />
           </div>
           <div className="bg-bms-800 py-12"> 
-            <div className="container mx-auto px-20 flex flex-col gap-10">
+            <div className="container mx-auto px-2 lg:px-24 flex flex-col gap-3">
                 <div className="hidden md:flex">
                     <img 
                        src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png"
@@ -36,14 +37,14 @@ const HomePage  = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4  my-8">
+        <div className="container mx-auto px-2 lg:px-24 my-8">
         < PosterSlider 
             images={TempPosters} 
             title="Online Streaming events" 
             isDark={false}
         />
         </div>
-        <div className="container mx-auto px-4 my-8">
+        <div className="container mx-auto px-2 lg:px-24 my-8">
         < PosterSlider 
             images={TempPosters} 
             title="Outdoor events" 
@@ -54,4 +55,4 @@ const HomePage  = () => {
     );
 };
 
-export default HomePage;
+export default HomePage; 

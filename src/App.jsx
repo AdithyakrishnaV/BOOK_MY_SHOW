@@ -19,7 +19,7 @@ function App() {
       <MovieHOC path="/movie/:id" excat component={Movie} />
     </>
   );
-}
+};
 
 export default App;
 
