@@ -48,7 +48,7 @@ const Plays = () => {
                     title="Date" 
                     tags={["Today", "Tomorrow", "This Weekend"]} />
                 <PlaysFilters 
-                    title="Date" 
+                    title="Language" 
                     tags={["Tamil", "Telegu", "English"]} />
               </div>
             </div>
