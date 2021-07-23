@@ -9,17 +9,17 @@ export default function PaymentModel({ isOpen, setIsOpen, price }) {
 
     const launchRazorPay = () => {
         let options = {
-            key: "rzp_test_tlKo0kIwtLDgwq",
-            amound: price * 100,
-            currency: "INR",
-            name: "Book My Show Clone",
-            description: "Movie Purchase or Rentel", 
-            image: "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
-            handler: () => {
-                setIsOpen(false);
-                alert("Payment Done");
-            },
-            theme: { color: "#c4242d" }
+          key: "rzp_test_tlKo0kIwtLDgwq",
+          amount: price * 100,
+          currency: "INR",
+          name: "Book My Show Clone",
+          description: "Movie Purchase or Rental",
+          image: "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+          handler: () => {
+            setIsOpen(false);
+            alert("Payment Done");
+          },
+          theme: { color: "#c4242d" },
         };
 
         let razorPay = new window.Razorpay(options);
