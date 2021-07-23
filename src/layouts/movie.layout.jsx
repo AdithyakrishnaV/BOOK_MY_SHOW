@@ -18,7 +18,7 @@ import { MovieContext } from '../Context/movie.context';
        setMovie(getMovieData.data);
     };
     requestMovie();
-  }, []);
+  }, [id]);
 
     return ( 
         <>
